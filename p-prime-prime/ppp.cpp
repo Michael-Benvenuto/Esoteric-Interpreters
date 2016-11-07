@@ -34,8 +34,9 @@ int main(int argc, const char* argv[]) {
     //Commands for P" are very similar to that of brainfuck, so this interpreter was fairly easy
 		for (int i = 0; i < strlen(cmd); i++) {
 			if (cmd[i] == 'r') {
-				if (cmd[i++] == '\'') {
+				if (cmd[i + 1] == '\'') {
 					buf[p]--;
+					i++;
 				}
 				else {
 					buf[p]++;
