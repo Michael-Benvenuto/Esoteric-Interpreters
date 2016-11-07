@@ -1,5 +1,7 @@
+#ifdef _WIN32                    //Only on windows
 #define _CRT_SECURE_NO_DEPRECATE //fread() is safe...
 #define NO_STDIO_REDIRECT        //we can use printf() on windows...
+#endif
 
 #include <stdlib.h>
 #include <stdio.h>
