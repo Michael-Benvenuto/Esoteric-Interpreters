@@ -31,6 +31,7 @@ int main(int argc, const char* argv[]) {
 		fread(cmd, s, 1, f);
 		fclose(f);
 		//Parse commands into numbers
+		//No commands other than A, B, C and D. No loops and no data manipulation from anywhere other than the user
 		for (int i = 0; i < strlen(cmd); i++) {
 			if (cmd[i] == 'A') {
 				p++;
