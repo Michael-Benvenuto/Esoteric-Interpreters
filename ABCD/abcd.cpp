@@ -39,10 +39,10 @@ int main(int argc, const char* argv[]) {
 				p--;
 			}
 			else if (cmd[i] == 'C') {
-        buf[p] = getchar();
+        			buf[p] = getchar();
 			}
 			else if (cmd[i] == 'D') {
-        printf("%c", buf[p]);
+       	 			printf("%c", buf[p]);
 			}
 		}
 	}
